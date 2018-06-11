@@ -6,7 +6,7 @@ def matVec(M,V):
   n = len(V)
   #these determine the length of the matrix and vector
   j = 0
-  #denotes the columns
+  #denotes the rows
   l = []
   #assigning an empty list to a variable
   
@@ -38,7 +38,7 @@ def matVec(M,V):
   while w < len(l):
     #accessing the index of all elements in the l-list
     w += n
-    #w needs to bee n, added n value to w to skip n-nimber for each iteration
+    #w needs to be n, added n value to w to skip n-nimber for each iteration
     s = 0
     for k in l [hh:w]:
       #accesss all the elements inside the created interval each at a time
@@ -46,7 +46,7 @@ def matVec(M,V):
       #same thing as before
     hh += n
     """
-    add n value to hh in order to skip n number for each iteration, keep the same interval size by adding the same value to start and end interval
+    add n value to hh in order to skip n number for each iteration,keep the same interval size by adding the same value to start and end interval
     """
     answer += [s]
     #adding the summed values in a list and add both lists into the empty list
@@ -62,4 +62,3 @@ print(matVec(M,V))
 
 #M = [1,2,3,4]
 #V = 2
-
