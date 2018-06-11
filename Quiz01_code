@@ -3,7 +3,7 @@ def matVec(M,V):
   This function utilizes while loops and for loops to take a vector and a matrix as its arguements and divides it into three python lists and deals with them before returning the final answer.
   """ 
   m = len(M)
-  n = len(V)
+  v = len(V)
   #these determine the length of the matrix and vector
   j = 0
   #denotes the rows
@@ -16,7 +16,7 @@ def matVec(M,V):
     """
     denotes rows, put it here in order for the while loop to be reset back to i = 0, instead of putting at beginning, putting it here allows us to not assign the same thing twice
     """
-    while i < n:
+    while i < v:
       #accessing elements in the first small list
        h = M[j][i]*V[i]
        #h is multiplication equation
@@ -37,14 +37,14 @@ def matVec(M,V):
   """
   while w < len(l):
     #accessing the index of all elements in the l-list
-    w += n
+    w += v
     #w needs to be n, added n value to w to skip n-nimber for each iteration
     s = 0
     for k in l [hh:w]:
       #accesss all the elements inside the created interval each at a time
       s += k
       #same thing as before
-    hh += n
+    hh += v
     """
     add n value to hh in order to skip n number for each iteration,keep the same interval size by adding the same value to start and end interval
     """
